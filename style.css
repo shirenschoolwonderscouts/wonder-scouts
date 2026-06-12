@@ -84,7 +84,13 @@ nav{
 }
 .hero-kicker::before{content:'';width:6px;height:6px;background:var(--amber);border-radius:50%;animation:pulse 2s infinite;}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(0.8);}}
-
+.hero-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* 黑色半透明，可調整透明度 */
+  pointer-events: none; /* 讓遮罩不干擾點擊事件 */
+}
 h1.hero-title{
   font-family:'Noto Serif TC',serif;
   font-size:clamp(44px,6vw,72px);
