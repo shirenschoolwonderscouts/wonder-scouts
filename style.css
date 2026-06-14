@@ -84,7 +84,7 @@ nav{
 }
 .hero-kicker::before{content:'';width:6px;height:6px;background:var(--amber);border-radius:50%;animation:pulse 2s infinite;}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(0.8);}}
-.hero-photo::after {
+.hero-photo::before {
   content: '';
   position: absolute;
   inset: 0;
